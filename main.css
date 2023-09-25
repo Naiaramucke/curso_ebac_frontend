@@ -1,0 +1,115 @@
+/* Estilos para o corpo da página */
+body {
+    margin: 100px;
+    padding: 50px;
+    background-color: #333;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #333;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: -50px;
+}
+
+header h1 {
+    font-size: 50px;
+    align-items: center;
+    margin-left: -10px;
+}
+
+a h1 {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+text-align: center;
+}
+
+/* Estilos para a barra de navegação superior */
+nav1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav1 a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    margin-top: -105px;
+    margin-bottom: 70px;
+    margin-right: -20px;
+}
+
+nav1 a:hover > h3 {
+    opacity: 0.5;
+}
+
+/* Estilos para as seções */
+nav2 {
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    margin-right: 30px;
+}
+
+/* Estilos para os itens do menu */
+nav2 a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    align-self: center;
+    display: flex;
+    margin-right: 30px; 
+}
+
+/* Estilos para as imagens */
+nav2 img {
+    max-width: 335px;
+    height: auto;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav2 a:hover > h2 {
+    opacity: 0.5;
+}
+
+/* Estilos para o contêiner */
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    background-color: #333;
+    padding: 20px; 
+}
+
+/* Estilos para os títulos (h3) */
+.container1 h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.container1 h2 {
+    font-size: 24px;
+    margin-bottom: 50px;
+    margin-top: -30px;
+    color: #fff;
+}
+
+/* Estilos para as imagens */
+.container1 img {
+    max-width: 100%;
+}
+
+
+

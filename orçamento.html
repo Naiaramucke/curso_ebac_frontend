@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/main.css" />
+</head>
+<body>
+    <header>            
+        <a href="home.html"><h1>Naiara Mücke - Graphic Designer</h1></a>
+    </header>
+    <h1>Orçamentos</h1>
+    <!-- Formulário HTML -->
+    <form id="myForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+        
+        <p>Escolha entre as opções para orçamento:</p>
+        <label for="numero">Selecione uma opção:</label>
+        <select id="numero" name="numero">
+            <option value="1">1 - Branding</option>
+            <option value="2">2 - Criação de conteúdo</option>
+            <option value="3">3 - Cobertura de evento</option>
+            <option value="4">4 - Material gráfico</option>
+            <option value="5">5 - Fotografia de produto</option>
+        </select>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!-- Script JavaScript -->
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+
+            // Obtenha os valores dos campos de entrada
+            var option = document.getElementById("numero").value;
+            var nome = document.getElementById("nome").value;
+
+            // Crie a mensagem por extenso
+            var mensagemCompleta = "Olá, meu nome é " + nome + ". Gostaria de orçamento para a opção " + option + ".";
+
+            // Codifique a mensagem para uso em uma URL
+            var mensagemCodificada = encodeURIComponent(mensagemCompleta);
+
+            // Abra o WhatsApp com a mensagem por extenso
+            var whatsappURL = "https://api.whatsapp.com/send?phone=5551997792423&text=" + mensagemCodificada;
+            window.location.href = whatsappURL;
+        });
+    </script>
+</body>
+</html>
